@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1170px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+figure img {
+    display: block;
+}
+
+
+/* Header */
+
+
+.header {
+    background-color:#313131;
+}
+
+.logo-block {
+    display: flex;
+    padding-left: 27px;
+    text-decoration: none;
+}
+
+.logo-ic {
+    width: 27px;
+    margin-right: 27px;
+}
+
+.logo-name {
+    font-weight: bold;
+    font-size: 22px;
+    color: #fff;
+}
+
+.logo-name:hover {
+    color: #14B9D5;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+.nav-link:hover {
+    color: #14B9D5;
+}
+
+.search {
+    background-color: #000000;
+    padding: 25px ;
+}
+
+.search-btn {
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search-btn:hover {
+    transform: scale(1.2);
+}
+
+/* Nav Section */
+
+.nav-anchors {
+background-color: #F2F2F2;
+justify-content: space-evenly;
+}
+
+.nav-anchors-link {
+color: #18B4CF;
+}
+
+
+/* The latest news section */
+
+.latest-news-section {
+    background-color: #808080;
+    background-image: url(../img/header-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.blackout {
+    padding: 165px 0 75px 0;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.heading {
+    margin: 0;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 37px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscribe-article-btn {
+    text-align: center;
+}
+
+.subscribe, .best-articles {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-radius: 4px;
+    margin-top: 44px;
+    display: inline-block;
+}
+
+.subscribe {
+    background-color: #89CA62;
+    padding-right: 19px;
+    padding-left: 19px;
+    margin-right: 20px;
+}
+
+.subscribe:hover {
+    background-color: #639447;
+    transition: 0.5s;
+}
+
+.best-articles {
+    background-color: #14B9D5;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-left: -4px;
+}
+
+.best-articles:hover {
+    background-color: #0f8ca1;
+    transition: 0.5s;
+}
+
+/* Most popular posts section */
+
+.popular-posts-section {
+    background-color: #F2F2F2;
+    padding: 50px 0 70px 0;
+}
+
+.section-name {
+    color: #18B4CF;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: bold;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 1030px;
+    width: 100%;
+    margin-left: -8px;
+}
+
+.img-posts {
+    width: calc(100% / 3);
+    margin: 0 8px 8px 0;
+}
+
+.img-posts a {
+    text-decoration: none;
+}
+
+.name-posts {
+    color: #353A3D;
+    background-color: #fff;
+    padding: 20px 15px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.btn-section-hide {
+    justify-content: center;
+}
+
+.btn-hide {
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+    background-color: #89CA62;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.btn-hide:hover {
+    background-color: #639447;
+    transition: 0.5s;
+}
+
+.btn-hide:after {
+    content: '\25B2';
+}
+
+.active:after {
+    content: '\25BC';
+}
+
+
+
+/* Clients section */
+
+.clients-section {
+    background-color: #808080;
+    background-image: url("../img/parallax-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.clients-h {
+    font-size: 32px;
+    padding-top: 105px;
+    padding-bottom: 85px;
+}
+
+.border {
+    width: 60px;
+    border-top: 3px solid #18B4CF;
+    padding-bottom: 105px;
+    margin: 0 auto;
+}
+
+.logo-clients-grid {
+    display: grid;
+    grid-template-columns: 197px 125px 220px 130px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 55px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 190px;
+}
+
+
+/* Rated section */
+
+
+.rated-section {
+    background-color: #E5E5E5;
+    padding-top: 50px;
+}
+
+.rated-section img {
+    display: block;
+}
+
+.rated-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+
+/* News section */
+
+
+.news-section {
+    padding: 50px 0 70px;
+    background: rgba(0, 0, 0, 0.0001);
+}
+
+.section-news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(259px auto);
+    row-gap: 40px;
+    column-gap: 35px;
+}
+
+.section-news-grid figure {
+    margin: 0;
+}
+
+.news2-grid.news2-gap {
+    margin-right: 12.5px;
+}
+
+.news3-grid.news3-gap {
+    margin-left: 12.5px;
+}
+
+.news1-grid {
+    grid-column: 1 / 4;
+    display: flex;
+}
+
+.news2-grid {
+    grid-column: 1 / 3;
+}
+
+.news3-grid {
+    grid-column: 3 / 5;
+    margin-left: 15px;
+}
+
+.news4-grid {
+    grid-column: 2 / 5; 
+    display: flex;
+}
+
+.news-block, .news-block--sm {
+    background: #F9F7F7;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.03);
+}
+
+.news-block {
+    padding: 10px 10px 0 0;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.news-block--sm {
+    text-align: center;
+    padding: 18px 0;
+} 
+
+.news-block h4, .news-block--sm h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.news-block p {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    padding: 10px 0 10px;
+}
+
+.news-block--pad {
+    padding-right: 25px;
+}
+
+.news-block a, .news-block--sm a {
+    text-decoration: none;
+    padding: 5px;
+    color: #000000;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer-logo {
+    display: flex;
+}
